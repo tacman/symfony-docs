@@ -452,6 +452,7 @@ will share identical locators among all the services referencing them::
     public function process(ContainerBuilder $container): void
     {
         // ...
+        $myService = $contain->get(MyService::class);
 
         $locateableServices = [
             // ...
